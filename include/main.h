@@ -39,7 +39,8 @@
 /**
  * You should add more #includes here
  */
-//#include "okapi/api.hpp"
+#include "okapi/api.hpp"
+#include "squiggles.hpp"
 //#include "pros/api_legacy.h"
 #include "EZ-Template/api.hpp"
 
@@ -83,6 +84,7 @@ void opcontrol(void);
  * You can add C++-only headers here
  */
 //#include <iostream>
+#include "organiz/organize.h"
 #endif
 
 #endif  // _PROS_MAIN_H_

@@ -332,6 +332,9 @@
         "version": "4.8.0"
       }
     },
-    "upload_options": {}
+    "upload_options": {
+      "description": "High Stakes Code",
+      "icon": "pros"
+    }
   }
 }

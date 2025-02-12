@@ -24,7 +24,7 @@ void on_center_button() {
  */
 void initialize() {
 	pros::lcd::initialize();
-	pros::lcd::register_btn1_cb(switchteams);
+	// pros::lcd::register_btn1_cb([]{sunaiControls != sunaiControls});
   pros::Task lb_control_task([]{
     while (true)
     {
@@ -70,7 +70,7 @@ void initialize() {
   ladyBrownSensor.reset();
   chassis.initialize();
   ez::as::initialize();
-  pros::lcd::set_background_color(LV_COLOR_HEX(0xFFC0CB));
+  // pros::lcd::set_background_color(LV_COLOR_HEX(0xFFC0CB));
   master.rumble(".");
 }
 
@@ -125,6 +125,7 @@ void autonomous() {
  * operator control task will be stopped. Re-enabling the robot will restart the
  * task, not resume it from where it left off.
  */
+
 void opcontrol() {
 
     // This is preference to what you like to drive on
